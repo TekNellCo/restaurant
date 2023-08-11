@@ -1,8 +1,10 @@
 import '../styles/about.css';
 import { main } from "../index";
+import { pizzaPage } from './pizza';
 
 
 export function aboutPage(){
+    main.innerHTML = ""
 
     let container = document.createElement('div');
         let header = document.createElement('div');
@@ -31,6 +33,10 @@ header.append(locations);
 container.append(description);
 description.append(p);
 
+
+pizza.addEventListener('click',()=>{
+    pizzaPage();
+})
 
 
 
