@@ -1,12 +1,13 @@
 
 import './styles/main.css';
 import {pizzaPage} from './pages/pizza.js'
+import {aboutPage} from './pages/about.js';
 
 
 export const main = document.getElementById('content');
 
 createMain();
-function createMain(){
+export function createMain(){
     let maincontainer = document.createElement("div");
     let welcome = document.createElement("h1");
     let browsercontainer = document.createElement("div");
@@ -17,6 +18,12 @@ function createMain(){
     pizza.addEventListener('click',()=>{
         pizzaPage();
     })
+    about.addEventListener('click',()=>{
+        aboutPage();
+    })
+    // location.addEventListener('click',()=>{
+    //     locationsPage();
+    // })
 
 
     welcome.textContent = "Welcome";

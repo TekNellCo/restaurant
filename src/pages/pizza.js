@@ -3,6 +3,7 @@ import { main } from "../index";
 import cheese from '../images/cheese.jpg';
 import pepp from '../images/pepperonni.jpg';
 import choc from '../images/chocolate.jpg';
+import { aboutPage } from './about.js';
 
 
 
@@ -24,7 +25,6 @@ export function pizzaPage(){
             let three = document.createElement('div');
                 let chocImg = new Image();
                 let chocP = document.createElement('p');
-
 
 cheeseImg.src = cheese;
 peppImg.src = pepp;
@@ -60,6 +60,10 @@ pizzaContainer.append(three);
 three.append(chocImg);
 three.append(chocP);
 
+
+about.addEventListener('click',()=>{
+    aboutPage();
+})
 
 
 
