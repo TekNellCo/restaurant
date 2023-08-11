@@ -1,6 +1,7 @@
 import '../styles/about.css';
 import { main } from "../index";
 import { pizzaPage } from './pizza';
+import { locationsPage } from './locations';
 
 
 export function aboutPage(){
@@ -37,7 +38,9 @@ description.append(p);
 pizza.addEventListener('click',()=>{
     pizzaPage();
 })
-
+locations.addEventListener('click',()=>{
+    locationsPage();
+})
 
 
 

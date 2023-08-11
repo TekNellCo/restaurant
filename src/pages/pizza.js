@@ -4,6 +4,7 @@ import cheese from '../images/cheese.jpg';
 import pepp from '../images/pepperonni.jpg';
 import choc from '../images/chocolate.jpg';
 import { aboutPage } from './about.js';
+import { locationsPage } from './locations';
 
 
 
@@ -64,7 +65,9 @@ three.append(chocP);
 about.addEventListener('click',()=>{
     aboutPage();
 })
-
+locations.addEventListener('click',()=>{
+    locationsPage();
+})
 
 
 

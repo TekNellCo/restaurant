@@ -1,7 +1,7 @@
 import '../styles/locations.css';
-import ny from '../images/ny.jpg';
-import japan from '../images/japan.jpg';
-import rome from '../images/rome.jpg';
+import nyImg from '../images/ny.jpg';
+import japanImg from '../images/japan.jpg';
+import romeImg from '../images/rome.jpg'
 import { main } from '../index'
 import { aboutPage } from './about';
 import { pizzaPage } from './pizza';
@@ -12,8 +12,8 @@ export function locationsPage(){
     main.innerHTML = ""
     let container = document.createElement('div');
         let header = document.createElement('div');
-            let about = document.createElement('h1');
-            let h1 = document.createElement('div');
+            let about = document.createElement('div');
+            let h1 = document.createElement('h1');
             let pizza = document.createElement('div');
         let body = document.createElement('div');
             let left = document.createElement('div');
@@ -23,9 +23,9 @@ export function locationsPage(){
             let right = document.createElement('div');
                 let p = document.createElement('p');
 
-ny.src = ny;
-japan.src = japan;
-rome.src = rome;
+ny.src = nyImg;
+japan.src = japanImg;
+rome.src = romeImg;
 
 
 container.className = "container";
@@ -52,7 +52,12 @@ left.append(rome);
 body.append(right);
 right.append(p);
 
-
+pizza.addEventListener('click',()=>{
+    pizzaPage();
+})
+about.addEventListener('click',()=>{
+    aboutPage();
+})
 
 
 
